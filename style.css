@@ -1,3 +1,130 @@
-* {
-    border: 1px solid black;
+.offset-1 {
+    margin-left: 8.33333333%;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 50px;
+    text-align: center;
+}
+
+.welcome {
+    background: #eeeefb;
+    height: 200px;
+
+}
+
+.welcome div {
+    height: 100%;
+}
+
+h2 {
+    position: relative;
+    left: -40px;
+    width: 321px;
+    height: 25px;
+    color: #093500;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 14.16px;
+}
+
+header {
+    background-image: url("./draw.png");
+    height: 80px;
+}
+
+
+header h1 {
+    padding: 15px 0 0 35px;
+    width: 200px;
+    height: 25px;
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Pro - Th Ex", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 14.16px;
+}
+
+p {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+p b{
+    color: #80a60f;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#about {
+    border-right: 2px solid #eeeefb;
+}
+
+article {
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+article img {
+    padding-top: 25px;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.img-wrapper img {
+    max-width: 443px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+article:not(:last-child) {
+    border-bottom: 2px solid #eeeefb;
+
+}
+
+article:not(:last-child):after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    bottom: -5px;
+    left: 1px;
+    border: 5px solid white;
+}
+
+footer {
+    border-top: 5px solid #eeeefb;
+}
+footer:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: -5px;
+    left: 10px;
+    border: 5px solid white;
+}
+
+nav {
+    padding: 15px;
+}
+
+nav span {
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 14.16px;
 }

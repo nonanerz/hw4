@@ -2,70 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <style>
-        * {
-            border: 1px solid black;
-        }
+    <link href="./style.css" rel="stylesheet">
+    <link href="./grid.css" rel="stylesheet">
 
-        .container {
-            margin: 0 50px 0 50px;
-        }
-
-        .nav {
-            height: 50px;
-        }
-        nav {
-            display: inline-block;
-            height: 100%;
-            width: 19%;
-        }
-
-        .welcome {
-            height: 300px;
-        }
-        #about {
-            height: 200px;
-            width: 30%;
-            display: inline-block;
-
-        }
-        section {
-            position: relative;
-            float: right;
-            width: 69%;
-        }
-        article {
-            height: 100px;
-        }
-    </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        header
-    </header>
-    <div class="nav">
-        <nav>home</nav>
-        <nav>about us</nav>
-        <nav>reserchers</nav>
-        <nav>service</nav>
-        <nav>contacts</nav>
-    </div>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <h1>Science <b>Lab</b></h1>
+            </header>
+        </div>
+
+        <div class="nav row">
+            <nav class="col-2 offset-1"><span>home</span></nav>
+            <nav class="col-2"><span>about us</span></nav>
+            <nav class="col-2"><span>reserchers</span></nav>
+            <nav class="col-2"><span>service</span></nav>
+            <nav class="col-2"><span>contacts</span></nav>
 
 
-    <div class="welcome">
-        welcome to our lab
-    </div>
+            <div class="welcome col-12 img-wrapper">
+                <div class="col-5"><img src="img.png"></div>
 
-    <div style="border: 2px solid red">
-        <div id="about">about</div>
-        <section>
-            <article >reserchers</article>
-            <article >reserchers</article>
-        </section>
+                <div class="col-7">
+                    <h2>Welcome to our <b>Lab</b></h2>
+                    <p><b>Ea consetetur sadi consetetur</b><br /> consetetur pscing elitr, sed diam lorem nonumy eirmod Erat, sed diam voluptua. Dolores et ea consetetur sadi pscing elitrn onumy eirmod Erat, sed diam voluptua. Dolores et ea consetetur sadi pscing elitrn onumy eirmod Erat, sed diam voluptua.       </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-4" id="about">
+                <h4>About our Lab</h4>
+                <p><b>Ea consetetur sadi consetetur  consetetur</b><br/> pscing elitr, sed diam lorem nonumy eirmod<br /><br />   Erat, sed diam voluptua. Dolores et ea consetetur sadi pscing elitrn onumy eirmod<br /><br />   Erat, sed diam voluptua. Dolores et ea consetetur sadi pscing elitrn onumy eirmod Erat, sed diam voluptua. Erat, sed diam voluptua. Dolores et ea consetetur sadi pscing elitrn onumy eirmod       </p>
+            </div>
+
+            <article class="col-8">
+                    <div class="col-4"><img src="./img%20(1).png"></div>
+                    <div class="col-7 offset-1">
+                        <h4>Researchers</h4>
+                        <p>
+                            <b>Ea consetetur sadi consetetur  consetetur</b><br /> pscing elitr, sed diam lorem nonumy eirmod Erat, sed diam voluptua. Dolores et ea consetetur sadi pscing elitrn onumy eirmod  
+                        </p>
+                    </div>
+            </article>
+
+            <article class="col-8">
+                    <div class="col-4"><img src="./img%20(2).png"></div>
+                    <div class="col-7 offset-1">
+                        <h4>Services</h4>
+                        <p>
+                            <b>Ea consetetur sadi consetetur  consetetur</b><br /> pscing elitr, sed diam lorem nonumy eirmod Erat, sed diam voluptua. Dolores et ea consetetur sadi pscing elitrn onumy eirmod  
+                        </p>
+                    </div>
+            </article>
+        </div>
+
+
+            <footer>Copyright © Your Company Name</footer>
     </div>
-    <footer>copiright</footer>
-</div>
 </body>
 </html>
