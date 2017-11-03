@@ -1,11 +1,16 @@
-.offset-1 {
-    margin-left: 8.33333333%;
-    box-sizing: border-box;
+nav {
+    min-height: 50px;
+    text-align: center;
+}
+nav ul li {
+    list-style: none;
 }
 
-nav {
-    height: 50px;
-    text-align: center;
+h2 {
+    position: relative;
+    height: 25px;
+    color: #093500;
+    font-size: 32px;
 }
 
 .welcome {
@@ -18,19 +23,9 @@ nav {
     height: 100%;
 }
 
-h2 {
-    position: relative;
-    left: -40px;
-    width: 321px;
-    height: 25px;
-    color: #093500;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 14.16px;
-}
 
 header {
-    background-image: url("./draw.png");
+    background-image: url("img/draw.png");
     height: 80px;
 }
 
@@ -56,10 +51,6 @@ p b{
     color: #80a60f;
     font-size: 15px;
     font-weight: 700;
-}
-
-#about {
-    border-right: 2px solid #eeeefb;
 }
 
 article {
@@ -90,21 +81,6 @@ img {
     bottom: 0;
 }
 
-article:not(:last-child) {
-    border-bottom: 2px solid #eeeefb;
-
-}
-
-article:not(:last-child):after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 8px;
-    bottom: -5px;
-    left: 1px;
-    border: 5px solid white;
-}
-
 footer {
     border-top: 5px solid #eeeefb;
 }
@@ -122,9 +98,74 @@ nav {
     padding: 15px;
 }
 
-nav span {
 
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 14.16px;
+
+.mobile-hidden {
+    display: none;
+}
+
+@media all and (min-width: 768px) {
+
+    nav ul li:first-child {
+        list-style: none;
+    }
+
+    nav ul li {
+        list-style-image: url(img/arrow.png);
+    }
+
+    .col-4 {
+        float: left;
+        width: 33.33333333%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .col-2 {
+        float: left;
+        width: 16.66666667%;
+        box-sizing: border-box;
+    }
+
+    .mobile-hidden {
+        display: block;
+    }
+    .arrow {
+        display: block;
+        width: 13px;
+        height: 9px;
+        margin-top: 14px;
+        background: url('./img/arrow1.png');
+    }
+
+    nav span {
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 14.16px;
+    }
+
+
+    nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .offset-1 {
+        margin-left: 8.33333333%;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        position: relative;
+        left: -40px;
+        width: 321px;
+        height: 25px;
+        color: #093500;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 14.16px;
+    }
 }
