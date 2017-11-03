@@ -165,11 +165,6 @@ footer:after {
         justify-content: space-around;
     }
 
-    .offset-1 {
-        margin-left: 8.33333333%;
-        box-sizing: border-box;
-    }
-
     h2 {
         position: relative;
         left: -40px;
