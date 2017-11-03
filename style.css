@@ -3,6 +3,11 @@ nav {
     text-align: center;
     padding-right: 35px;
 }
+
+a {
+    text-decoration: none;
+}
+
 nav ul li {
     list-style: none;
     border: 1px solid #80a60f;
@@ -28,6 +33,7 @@ h4 {
 .welcome {
     background: #eeeefb;
     height: auto;
+    padding: 20px;
 }
 
 .welcome div {
@@ -66,12 +72,6 @@ p b{
     font-weight: 700;
 }
 
-article {
-    padding-right: 20px;
-    padding-left: 20px;
-    position: relative;
-}
-
 article img {
     padding-top: 25px;
 }
@@ -83,6 +83,7 @@ article img {
 img {
     width: 100%;
     height: auto;
+    min-height: 110px;
 }
 
 .img-wrapper img {
@@ -92,19 +93,6 @@ img {
     position: absolute;
     left: 0;
     bottom: 0;
-}
-
-footer {
-    border-top: 5px solid #eeeefb;
-}
-footer:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100px;
-    top: -5px;
-    left: 10px;
-    border: 5px solid white;
 }
 
 .mobile-hidden {
@@ -177,7 +165,7 @@ footer:after {
     }
 
     p {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 700;
         padding: 0;
     }
@@ -185,13 +173,14 @@ footer:after {
 
     p b{
         color: #80a60f;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 700;
     }
 
     .welcome {
         background: #eeeefb;
         height: 200px;
+        padding: inherit;
     }
 
     .col-7 {
@@ -213,4 +202,9 @@ footer:after {
     nav {
         padding: 15px;
     }
+
+    .article-divider {
+        width: 55%;
+    }
+
 }
