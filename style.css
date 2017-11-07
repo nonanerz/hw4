@@ -1,3 +1,11 @@
+body {
+    font-family: sans-serif;
+}
+.img-wrapper {
+
+}
+
+
 nav {
     min-height: 50px;
     text-align: center;
@@ -9,21 +17,23 @@ a {
     color: black;
 }
 
-nav ul li {
-    list-style: none;
-    border: 1px solid #80a60f;
-    border-radius: 2px;
-    margin-top: 5px;
-    background-color:  #eeeefb;
-    height: 30px;
-    line-height: 30px;
+img {
+    width: 100%;
+    height: auto;
 }
 
+nav ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+
 h2 {
+    font-family: sans-serif;
     position: relative;
-    height: 25px;
     color: #093500;
     font-size: 32px;
+    font-weight: 300;
 }
 
 h4 {
@@ -50,26 +60,37 @@ header {
 
 
 header h1 {
-    padding: 15px 0 0 35px;
+    font-family: sans-serif;
+    padding-left: 35px;
     width: 200px;
-    height: 25px;
-    color: #ffffff;
-    font-family: "Helvetica Neue LT Pro - Th Ex", serif;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 32px;
-    font-weight: 400;
-    line-height: 14.16px;
+    font-weight: 100;
+}
+
+header h1 span{
+    color: white;
+}
+
+h4 {
+    font-family: sans-serif;
+    color: #093500;
+    font-size: 22px;
 }
 
 p {
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 13px;
     padding: 15px;
 }
 
 
-p b{
+p span{
     color: #80a60f;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+h2 span{
     font-weight: 700;
 }
 
@@ -77,33 +98,55 @@ article img {
     padding-top: 25px;
 }
 
-.img-wrapper {
-    position: relative;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    min-height: 110px;
-}
-
-.img-wrapper img {
-    max-width: 443px;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
 
 .mobile-hidden {
     display: none;
 }
 
 @media all and (min-width: 768px) {
+    .wrapper {
+        display: inline-block;
+        width: 100%;
+    }
+    .about {
+        display: inline-block;
+        width: 30%;
+    }
+    .wrapper-left {
+        display: inline-block;
+        width: 69%;
+    }
+    .research {
+        display: inline-block;
+        width: 100%;
+    }
+    .services {
+        display: inline-block;
+        width: 100%;
+    }
+    .image-research {
+        display: inline-block;
+        width: 39%;
+    }
+    .image-services {
+        display: inline-block;
+        width: 39%;
+    }
+    .text {
+        display: inline-block;
+        width: 59%;
+    }
+    .image {
+        width: 189px;
+    }
 
     nav ul li:first-child {
         list-style: none;
+    }
+
+    img {
+        width: auto;
+        height: 100%;
     }
 
     nav ul li {
@@ -113,6 +156,11 @@ img {
         background-color:  white;
         height: 30px;
         line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+        color: rgb(50, 111, 14);
     }
 
     .col-4 {
@@ -140,7 +188,6 @@ img {
     }
 
     nav span {
-
         font-size: 20px;
         font-weight: 400;
         line-height: 14.16px;
@@ -151,31 +198,24 @@ img {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        padding: 0;
         justify-content: space-around;
     }
 
+
+
     h2 {
+        font-family: sans-serif;
         position: relative;
-        left: -40px;
-        width: 321px;
-        height: 25px;
         color: #093500;
+        font-weight: 300;
         font-size: 32px;
-        font-weight: 400;
-        line-height: 14.16px;
     }
 
     p {
-        font-size: 14px;
-        font-weight: 700;
+        color: rgb(50, 111, 0);
+        font-size: 13px;
         padding: 0;
-    }
-
-
-    p b{
-        color: #80a60f;
-        font-size: 17px;
-        font-weight: 700;
     }
 
     .welcome {
@@ -198,6 +238,9 @@ img {
 
     h4 {
         text-align: justify;
+        display: block;
+        font-weight: 400;
+        color: #385a3a;
     }
 
     nav {
@@ -206,6 +249,11 @@ img {
 
     .article-divider {
         width: 55%;
+    }
+
+    footer {
+        font-size: 10px;
+        margin-bottom: 15p;
     }
 
 }
