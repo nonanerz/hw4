@@ -1,10 +1,6 @@
 body {
     font-family: sans-serif;
 }
-.img-wrapper {
-
-}
-
 
 nav {
     min-height: 50px;
@@ -12,9 +8,10 @@ nav {
     padding-right: 35px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+#header-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 img {
@@ -23,10 +20,19 @@ img {
 }
 
 nav ul li {
-    list-style: none;
-    margin-top: 5px;
+    list-style-image: url(../img/arrow.png);
+    border: none;
+    margin: 0;
+    background-color:  white;
+    height: 30px;
+    line-height: 30px;
 }
 
+nav ul li a {
+    font-size: 23px;
+    color: rgb(50, 111, 14);
+    text-decoration: none;
+}
 
 h2 {
     font-family: sans-serif;
@@ -35,11 +41,6 @@ h2 {
     font-size: 32px;
     font-weight: 300;
 }
-
-h4 {
-    text-align: center;
-}
-
 
 .welcome {
     background: #eeeefb;
@@ -52,10 +53,13 @@ h4 {
 }
 
 
+footer {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
 
 header {
-    background-image: url("img/draw.png");
-    height: 80px;
+    background-image: url("../img/draw.png");
 }
 
 
@@ -76,6 +80,7 @@ h4 {
     font-family: sans-serif;
     color: #093500;
     font-size: 22px;
+    text-align: center;
 }
 
 p {
@@ -94,8 +99,9 @@ h2 span{
     font-weight: 700;
 }
 
-article img {
-    padding-top: 25px;
+
+.desktop-hidden {
+    display: block;
 }
 
 
@@ -144,13 +150,13 @@ article img {
         list-style: none;
     }
 
-    img {
+    #header-img {
         width: auto;
         height: 100%;
     }
 
     nav ul li {
-        list-style-image: url(img/arrow.png);
+        list-style-image: url(../img/arrow.png);
         border: none;
         margin: 0;
         background-color:  white;
@@ -179,12 +185,17 @@ article img {
     .mobile-hidden {
         display: block;
     }
+
+    .desktop-hidden {
+        display: none;
+    }
+
     .arrow {
         display: block;
         width: 13px;
         height: 9px;
         margin-top: 14px;
-        background: url('./img/arrow1.png');
+        background: url('../img/arrow1.png');
     }
 
     nav span {
@@ -201,8 +212,6 @@ article img {
         padding: 0;
         justify-content: space-around;
     }
-
-
 
     h2 {
         font-family: sans-serif;
@@ -236,6 +245,12 @@ article img {
         box-sizing: border-box;
     }
 
+    .col-5 {
+        float: left;
+        width: 41.66666667%;
+        box-sizing: border-box;
+    }
+
     h4 {
         text-align: justify;
         display: block;
@@ -247,13 +262,9 @@ article img {
         padding: 15px;
     }
 
-    .article-divider {
-        width: 55%;
-    }
-
     footer {
         font-size: 10px;
-        margin-bottom: 15p;
+        margin-bottom: 15px;
     }
 
 }

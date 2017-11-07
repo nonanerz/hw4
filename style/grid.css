@@ -30,11 +30,6 @@
         box-sizing: border-box;
     }
 
-    .col-5 {
-        float: left;
-        width: 41.66666667%;
-        box-sizing: border-box;
-    }
     .col-3 {
         float: left;
         width: 25%;
